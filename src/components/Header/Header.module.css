@@ -1,0 +1,12 @@
+.hamburger-nav__toogle {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+@media only screen and (max-width: 804px) {
+  .hamburger-nav__toogle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

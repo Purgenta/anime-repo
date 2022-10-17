@@ -1,0 +1,35 @@
+.result-image {
+  height: 200px;
+  width: 150px;
+  border-radius: 1rem;
+}
+.anime-search__result {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 0.2rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.anime-search__result__title {
+  text-align: center;
+  padding: 1rem 2rem;
+  flex-grow: 2;
+}
+.anime-search__result__aired {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0.5rem 0rem;
+}
+.more-details {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  background-color: #401f7c;
+  border-radius: 1.5rem;
+  margin: 0.3rem 1.4rem;
+  width: 70%;
+  color: white;
+}

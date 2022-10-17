@@ -1,0 +1,40 @@
+.anime-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+.anime-search > form {
+  width: 60%;
+}
+.anime-search__controls > span {
+  border: 0px;
+  padding: 0rem 0.4rem;
+  display: inline-block;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.4);
+}
+.anime-search__controls > input::placeholder,
+.anime-search__controls > input::-ms-value {
+  font-size: 1rem;
+}
+.anime-search__controls > input {
+  border: none;
+  padding: 0.5rem 0.2rem;
+  background-color: transparent;
+  animation: 0.5s ease-in;
+  outline: 0px;
+  flex-grow: 2;
+}
+
+.anime-search__controls {
+  background-color: rgb(219, 234, 248);
+  border-radius: 1rem;
+  display: flex;
+}
+@media only screen and (max-width: 804px) {
+  .anime-search > form {
+    width: 80%;
+    max-width: 500px;
+  }
+}
