@@ -11,10 +11,7 @@ const AnimeDetails = () => {
   return (
     <section className="anime-details">
       {isLoading && !error && <Spinner size="4rem"></Spinner>}
-      {animeInfo["mal_id"] ||
-        (animeInfo["mal_id"] !== 0 && (
-          <AnimeDetailed data={animeInfo}></AnimeDetailed>
-        ))}
+      {animeInfo && <AnimeDetailed data={animeInfo}></AnimeDetailed>}
     </section>
   );
 };

@@ -1,11 +1,17 @@
 import style from "./AnimeItem.module.css";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const animeDetailsAnimation = {
   hover: {
     scale: 1.1,
   },
 };
 const AnimeItem = (props) => {
+  const navigation = useNavigate();
+  const detailsHandler = (event) => {
+    event.preventDefault();
+    navigation(`/anime-details/${props.id}`);
+  };
   const { webp } = props.images;
   const { from, to } = props.aired;
   const fromYear = new Date(from).getFullYear();
@@ -24,13 +30,14 @@ const AnimeItem = (props) => {
       <h3
         className={style["anime-search__result__aired"]}
       >{`${fromYear} ${toYear}`}</h3>
-      <motion.button
+      <motion.a
+        onClick={detailsHandler}
         variants={animeDetailsAnimation}
         whileHover="hover"
         className={style["more-details"]}
       >
         Details
-      </motion.button>
+      </motion.a>
     </li>
   );
 };
