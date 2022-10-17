@@ -1,0 +1,12 @@
+.anime-image__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0.5rem;
+}
+.anime-large__image {
+  max-width: 60%;
+}
+.anime-synopsis {
+  padding: 2rem;
+}
